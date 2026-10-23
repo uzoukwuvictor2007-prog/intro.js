@@ -1,0 +1,13 @@
+### Register a student
+POST http://localhost:5000/students
+Content-Type: application/json
+
+{
+  "firstName": "Olayinka",
+  "lastName": "Orisande",
+  "email": "orisandeolayinka30@gmail.com",
+  "age": 22,
+  "gender": "Male",
+  "department": "Computer Science",
+  "level": 300
+}
