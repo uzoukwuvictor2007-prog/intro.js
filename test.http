@@ -3,11 +3,11 @@ POST http://localhost:5000/students
 Content-Type: application/json
 
 {
-  "firstName": "Olayinka",
+  "firstName": "ope",
   "lastName": "Orisande",
-  "email": "orisandeolayinka30@gmail.com",
+  "email": "orisandeolayinka88@gmail.com",
   "age": 22,
   "gender": "Male",
   "department": "Computer Science",
-  "level": 300
+  "level": 200
 }
