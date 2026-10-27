@@ -46,7 +46,7 @@ router.get("/:id", validateId, async (req, res, next) => {
 router.put("/:id", validateId, async (req, res, next) => {
   try {
     const student = await Student.findByIdAndUpdate(req.params.id, req.body, {
-      new: true,
+     returnDocument: "after",
       runValidators: true,
     });
     if (!student) return res.status(404).json({ error: "Student not found" });
