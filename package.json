@@ -4,8 +4,8 @@
   "description": "A RESTful API for managing student records, academic performance, attendance, etc. This project is designed to help schools, colleges, and training centers efficiently store, retrieve, update, and manage their student data.",
   "main": "index.js",
  "scripts": {
-  "test": "jest --runInBand",
-  "start": "node server.js"
+  "start": "node server.js",
+  "test": "jest --runInBand"
 },
   "keywords": [],
   "author": "",
