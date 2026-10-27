@@ -11,3 +11,67 @@ Content-Type: application/json
   "department": "Computer Science",
   "level": 200
 }
+### Register Olayinka
+POST http://localhost:5000/students
+Content-Type: application/json
+
+{
+  "firstName": "Olayinka",
+  "lastName": "Orisande",
+  "email": "orisandeolayinka30@gmail.com",
+  "age": 22,
+  "gender": "Male",
+  "department": "Computer Science",
+  "level": 300
+}
+
+### Get all students
+GET http://localhost:5000/students
+
+### Get one student
+GET http://localhost:5000/students/6adb4e37d8254ae32fff19b1
+
+### Update a student
+PUT http://localhost:5000/students/6adb4e37d8254ae32fff19b1
+Content-Type: application/json
+
+{
+  "age": 23,
+  "level": 400
+}
+
+### Invalid ID (should return 400)
+GET http://localhost:5000/students/123
+
+### Student not found (should return 404)
+GET http://localhost:5000/students/64b7f0f2a1b2c3d4e5f60789
+
+### Unknown route (should return 404)
+GET http://localhost:5000/anything
+
+### Invalid data (should return 400)
+POST http://localhost:5000/students
+Content-Type: application/json
+
+{
+  "firstName": "A",
+  "email": "abc",
+  "age": 200
+}
+
+### Register a student to delete
+POST http://localhost:5000/students
+Content-Type: application/json
+
+{
+  "firstName": "Test",
+  "lastName": "Delete",
+  "email": "test.delete@example.com",
+  "age": 20,
+  "gender": "Other",
+  "department": "Computer Science",
+  "level": 100
+}
+
+### Delete the test student (replace PASTE_TEST_ID)
+DELETE http://localhost:5000/students/PASTE_TEST_ID
