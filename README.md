@@ -214,8 +214,11 @@ The tests cover registration, login, route protection and every student endpoint
 ## Team
 
 
-| Name | GitHub | Role |
-|---|---|---|
-| Olayinka Orisande | orisandeolayinka30-yinka | Student schema and validation, registration endpoint, view/update/delete endpoints, error handling, login and API protection, automated tests, README |
-| Victor | uzoukwuvictor2007-prog | (his role) |
-| (name) | (GitHub username) | (role) |
+## Team
+
+|## Team
+
+| Name | Role |
+|---|---|
+| Olayinka Orisande | Student schema and validation, registration endpoint, view/update/delete endpoints, error handling, login and API protection, automated tests, README |
+| Victor | Created the GitHub repository and wrote the initial README |
