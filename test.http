@@ -75,3 +75,39 @@ Content-Type: application/json
 
 ### Delete the test student (replace PASTE_TEST_ID)
 DELETE http://localhost:5000/students/PASTE_TEST_ID
+
+### Register a user
+POST http://localhost:5000/auth/register
+Content-Type: application/json
+
+{
+  "name": "Olayinka Orisande",
+  "email": "orisandeolayinka30@gmail.com",
+  "password": "olayinka223355"
+}
+
+### Login
+# @name login
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+  "email": "orisandeolayinka30@gmail.com",
+  "password": "olayinka223355"
+}
+
+### Get students WITHOUT a token (should return 401)
+GET http://localhost:5000/students
+
+### Get students WITH a token (should return 200)
+GET http://localhost:5000/students
+Authorization: Bearer {{login.response.body.token}}
+
+### Wrong password (should return 401)
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+  "email": "orisandeolayinka30@gmail.com",
+  "password": "wrongpassword"
+}
