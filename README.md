@@ -2,6 +2,9 @@
 
 A REST API for managing student records, built with Node.js, Express and MongoDB (Mongoose). It supports registering students, viewing, updating and deleting them, and uses JWT login to protect every student route.
 
+**Live API:** https://student-management-api-for-group-1-c.onrender.com
+
+
 ## Features
 
 - Register, view, update and delete students
